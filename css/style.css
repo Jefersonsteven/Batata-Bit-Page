@@ -7,8 +7,8 @@
     --warm-black: #201E1C;
     --warn-black-1: #282623;
     --Grey: #BABABA;
-    off-white: #FAF8F7;
-    just-white: #ffffff;
+    --off-white: #FAF8F7;
+    --just-white: #ffffff;
 }
 
 html {
