@@ -12,7 +12,51 @@
 }
 
 html {
-    font-size: 62,5%;
+    font-size: 62.5%;
     font-family: 'DM Sans', sans-serif;
 }
 
+header {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    min-width: 320px;
+    height: 334px;
+    /* Linear BG */
+    background: linear-gradient(207.8deg, #201E1C 16.69%, #F7931A 100%);
+}
+
+header img {
+    width: 151px;
+    height: 24px;
+    margin-top: 60px;
+    align-self: center;
+}
+
+header .content-header {
+    width: 90%;
+    min-width: 288px;
+    max-width: 900px;
+    height: 218px;
+    margin-top: 25px;
+    text-align: center;
+    align-self: center;
+}
+
+header .content-header h1 {
+    font-size: 2.5rem;
+    color: var(--just-white);
+}
+
+header .content-header p {
+    font-size: 1.4rem;
+    color: var(--just-white);
+}
+
+/* header .content-header a  span {
+    background-image: url(/Assets/Icons/flecha-abajo.svg);
+} */
