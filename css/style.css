@@ -9,6 +9,14 @@
     --Grey: #BABABA;
     --off-white: #FAF8F7;
     --just-white: #ffffff;
+    /* Font */
+    --primary-font: 'DM Sans', sans-serif;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
 
 html {
@@ -50,13 +58,39 @@ header .content-header {
 header .content-header h1 {
     font-size: 2.5rem;
     color: var(--just-white);
+    font-weight: bold;
+    line-height: 26px;
 }
 
 header .content-header p {
+    padding-top: 16px;
     font-size: 1.4rem;
     color: var(--just-white);
 }
 
-/* header .content-header a  span {
-    background-image: url(/Assets/Icons/flecha-abajo.svg);
-} */
+header .content-header .button-content {
+    position: absolute;
+    left: calc(50% - 118px);
+    top: 270px;
+    display: block;
+    margin-top: 35px;
+    padding: 15px;
+    width: 229px;
+    height: 48px;
+    background-color: var(--off-white);
+    border-radius: 4px;
+    /* Sombra */
+    box-shadow: 0px 4px 8px rgba(89,73,30,0.16);
+    font-size: 1.4rem;
+    font-family: var(--primary-font);
+    font-weight: bold;
+    text-decoration: none;
+    color: var(--warm-black);
+}
+
+header .content-header .button-content span {
+    display: inline-block;
+    width: 25px;
+    height: 24px;
+    background-image: url('../Assets/Icons/flecha-abajo.svg');
+}
