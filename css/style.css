@@ -11,6 +11,7 @@
     --just-white: #ffffff;
     /* Font */
     --primary-font: 'DM Sans', sans-serif;
+    --second-font: "Inter", sans-serif;
 }
 
 * {
@@ -143,116 +144,218 @@ main .main-exchange-container .backgroundImg {
     background-repeat: no-repeat;
 }
 
-main .main-tables-container {
-     position: relative;
-     display: flex;
-     flex-direction: column;
-     align-items: center;
-     margin-top: 48px;
+/* ------------ */
+
+main .main-currency-table {
+    width: 70%;
+    min-width: 235px;
+    max-width: 500px;
+    height: 330px;
+    margin: 0 auto;
+    font-family: var(--second-font);
 }
 
-main .main-tables-container li {
-    background-color: var(--just-white);
-    width: 101px;
-    height: 39px;
-    list-style: none;
-    padding-top: 10px;
-    margin: 1px;
-    font-family: 'Inter', sans-serif;
+main .main-currency-table .currency-table--title {
+    margin-bottom: 15px;
+    font-size: 1.8rem;
+    font-weight: bold;
+    line-height: 2.3rem;
+    color: var(--bitcoin-orange);
 }
 
-main .main-tables-container .main-tables-container--coins {
-    color:  rgba(181, 176, 172, 1);
+main .currency-table--container {
+    width: 90%;
+    min-width: 230px;
+    max-width: 300px;
+    height: 250px;
+    margin: 0 auto;
+}
+
+main .currency-table--container table {
+    width: 100%;
+    height: 100%;
+}
+
+main .currency-table--container td {
+    width: 50%;
     font-size: 1.6rem;
-    text-align: left;
+    font-weight: 500;
+    line-height: 1.9rem;
+    color: var(--Grey);
+    background-color: var(--just-white);
 }
 
-main .main-tables-container .main-tables-container--coins li {
-    padding-left: 12px;  
-}
-
-main .main-tables-container .main-tables-container--value-coins {
-    color: rgba(117, 117, 117, 1);
-    font-size: 1.4rem;
-    font-weight: 400;
-
-}
-
-main .main-tables-container--box {
-    display: flex;
-    flex-direction: row;
-    margin-top: 12px;
-}
- 
-/* coloque id para hacerle las curvas a 4 elemento li en especifico 
-(lo hice con id por que queria probarlo pero prodia haberlo hecho con clases)*/
-
-#Bitcoin {
+main .currency-table--container .table__top-left {
     border-top-left-radius: 8px 8px;
 }
 
-#Bitcoin-value {
+main .currency-table--container .table__top-right {
     border-top-right-radius: 8px 8px;
 }
 
-#Stellar {
+main .currency-table--container .table__bottom-left {
     border-bottom-left-radius: 8px 8px;
 }
 
-#Stellar-value {
+main .currency-table--container .table__bottom-right {
     border-bottom-right-radius: 8px 8px;
 }
 
-/* ---------------------------------------- */
-
-main .main-tables-container div > span {
-    font-size: 1.8rem;
-    font-weight: 700;
-    color: var(--bitcoin-orange);
-    margin-right: 98px;
+main .currency-table--container .table__right {
+    color: #757575;
+    font-size: 1.4rem;
+    font-weight: normal;
+    line-height: 1.7rem;
 }
 
-main .main-exchange-container .main-tables-container--value-coins li span {
+main .currency-table--container .down {
     display: inline-block;
-    width: 12px;
-    height: 12px;
+    width: 15px;
+    height: 15px;
     margin-left: 10px;
-}
-
-main .main-exchange-container .main-tables-container--value-coins .Bitcoin-value span {
     background-image: url("/Assets/Icons/bajada.svg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
-main .main-exchange-container .main-tables-container--value-coins .Ethereum-value span {
+main .currency-table--container .rise {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    margin-left: 10px;
     background-image: url("/Assets/Icons/subida.svg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
-main .main-exchange-container .main-tables-container--value-coins .Ripple-value span {
-    background-image: url("/Assets/Icons/bajada.svg");
-}
-
-main .main-exchange-container .main-tables-container--value-coins .Stellar-value span {
-    background-image: url("/Assets/Icons/bajada.svg");
-}
-
-/* ------------------------------------------*/
-
-main .main-exchange-container .main-act {
-    width: 173px;
-    height: 31px;
+main .main-tables-container .currency-table-date {
+    width: 190px;
+    height: 30px;
     background-color: var(--soft-orange);
-    margin: 0 auto;
-    margin-top: 16px;
+    margin-top: 15px;
     padding: 8px;
-    font-family: 'Inter', sans-serif;
+    margin: 0 auto;
     border-radius: 8px;
 }
 
-main .main-exchange-container .main-act .text {
-    font-weight: 700;
-    font-size: 1.6rem;
+
+main .main-tables-container .currency-table-date p {
+    font-size: 1.2rem;
+    padding: 0;
+    line-height: 1.6rem;
 }
 
-main .main-exchange-container .main-act .text {
-    font-size: 1.2rem;
+/* Segunda tabla */
+
+main .main-commissions-table {
+    width: 70%;
+    min-width: 235px;
+    max-width: 500px;
+    height: 330px;
+    margin: 0 auto;
+    font-family: var(--second-font);
 }
+
+main .main-commissions-table .commissions-table--title {
+    margin-bottom: 15px;
+    font-size: 1.8rem;
+    font-weight: bold;
+    line-height: 2.3rem;
+    color: var(--secondary-blue);
+}
+
+main .commissions-table--container {
+    width: 90%;
+    min-width: 230px;
+    max-width: 300px;
+    height: 250px;
+    margin: 0 auto;
+}
+
+main .commissions-table--container table {
+    width: 100%;
+    height: 100%;
+}
+
+main .commissions-table--container td {
+    width: 50%;
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 1.9rem;
+    color: var(--Grey);
+    background-color: var(--just-white);
+}
+
+main .commissions-table--container .table__top-left {
+    border-top-left-radius: 8px 8px;
+}
+
+main .commissions-table--container .table__top-right {
+    border-top-right-radius: 8px 8px;
+}
+
+main .commissions-table--container .table__bottom-left {
+    border-bottom-left-radius: 8px 8px;
+}
+
+main .commissions-table--container .table__bottom-right {
+    border-bottom-right-radius: 8px 8px;
+}
+
+main .commissions-table--container .table__right {
+    color: #757575;
+    font-size: 1.4rem;
+    font-weight: normal;
+    line-height: 1.7rem;
+}
+
+main .main-tables-container .commissions-table-date {
+    width: 190px;
+    height: 30px;
+    background-color: var(--soft-blue);
+    margin-top: 15px;
+    padding: 8px;
+    margin: 0 auto;
+    border-radius: 8px;
+}
+
+
+main .main-tables-container .commissions-table-date p {
+    font-size: 1.2rem;
+    padding: 0;
+    line-height: 1.6rem;
+}
+
+/* prueba */
+
+main .main-product-detail {
+    width: 100%;
+    height: 910px;
+    background-color: var(--warm-black);
+    color: var(--just-white);
+    padding-top: 64px ;
+} 
+
+main div {
+    text-align: center;
+}
+
+main div h2 {
+    font-size: 2.4rem;
+    padding-right: 17px;
+    padding-left: 15px;
+    margin-bottom: 24px;
+}
+
+main div p {
+    font-size: 1.4rem;
+    margin-bottom: 32px;
+    color: #808080;
+}
+
+/* ----- */
+
+
+
