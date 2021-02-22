@@ -357,5 +357,91 @@ main div p {
 
 /* ----- */
 
+main .product-cards-container {
+    margin:0 auto;
+}
 
+main .main-product-detail .icon-patata {
+    background-image: url("/Assets/Imagenes/Patata-bit.svg");
+    position: absolute;
+    width: 40.57px;
+    height: 24.01px;
+    left: 120px;
+    top: 1650px;
 
+transform: matrix(-1, 0, 0, 1, 0, 0);
+}
+
+main .product-detail--card {
+    width: 288px;
+    min-width: 250px;
+    max-width: 320px;
+    height: 152px;
+    background-color: var(--warn-black-1);
+    margin: 0 auto;
+    border-radius: 4px;
+    margin-bottom: 16px;
+}
+
+main .product-detail--card .clock {
+    display: inline-block;
+    background-image: url("/Assets/Icons/clock.svg");
+    width: 24px;
+    height: 24px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: 14px;
+    margin-left: 16px;
+    margin-bottom: 10px;
+}
+
+main .product-detail--card .eye {
+    display: inline-block;
+    background-image: url("/Assets/Icons/eye.svg");
+    width: 24px;
+    height: 24px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: 14px;
+    margin-left: 16px;
+    margin-bottom: 10px;
+}
+
+main .product-detail--card .dollar {
+    display: inline-block;
+    background-image: url("/Assets/Icons/dollar-sign.svg");
+    width: 24px;
+    height: 24px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: 14px;
+    margin-left: 16px;
+    margin-bottom: 10px;
+}
+
+main .product-detail--card .check-circle {
+    display: inline-block;
+    background-image: url("/Assets/Icons/check-circle.svg");
+    width: 24px;
+    height: 24px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: 14px;
+    margin-left: 16px;
+    margin-bottom: 10px;
+}
+
+main .product-detail--card .product-card-title {
+    font-size: 1.8rem;
+    font-weight: normal;
+    line-height: 1.8rem;
+    margin-bottom: 10px;
+    margin-left: 16px ;
+}
+
+main .product-detail--card .product-card-body {
+    font-size: 1.4rem;
+    font-weight: normal;
+    line-height: 1.8rem;
+    margin: 10px 20px 22px 16px;   
+}
