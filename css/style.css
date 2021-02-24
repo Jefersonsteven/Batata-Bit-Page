@@ -434,9 +434,55 @@ main .product-detail--card .product-card-body {
 
 /* ---------- */
 
-main .main-plans-options .plans-bitcoin-baby {
+main .main-plans-options .bitcoin-image-container {
+    padding-top: 79px;
+    text-align: center;
     display: inline-block;
     width: 100%;
     height: 387px;
-    background-image: url(/Assets/Imagenes/bitcoinbaby.jpg);
+    background-image: url(/Assets/Imagenes/bitcoinbaby2X.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
+
+main .main-plans-options .bitcoin-image-container h2 {
+    font-size: 2.4rem;
+    line-height: 2.6px;
+    font-weight: bold;
+    color: var(--just-white);
+}
+
+/* ---------------------------*/
+
+main .main-plans-container {
+    width: 100%;
+    min-width: 320px;
+    padding-bottom: 70px;
+    text-align: center;
+}
+main .main-plans-container .plans--title {
+    width: 90%;
+    min-width: 288px;
+    height: auto;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+
+main .main-plans-container .plans--title h2 {
+    padding-top: 64px;
+    padding-bottom: 24px;
+    font-size: 2.4rem;
+    color: var(--warm-black);
+    font-weight: 700;
+    line-height: 2.6rem;
+}
+
+main .main-plans-container .plans--title p {
+    font-size: 1.4rem;
+    color: #757575;
+    font-weight: 500;
+    line-height: 1.8rem;
+}
+
+/* ----experimentos---- */
