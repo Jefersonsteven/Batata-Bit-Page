@@ -11,8 +11,10 @@
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Inter:wght@300;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/tablet.css" media="(min-width: 930px)">
 </head>
 <body>
+
     <header>
          <img src="Assets/Imagenes/isologo.svg" alt="">
          <div class="content-header">
@@ -25,7 +27,9 @@
              <a  href="#plans" class="button-content"> Conoce Nuestros Planes <span>I</span> </a> 
          </div>
     </header>
+    
     <main>
+
        <section class="main-exchange-container">
           <div class="backgroundImg">
               <img src="/Assets/Imagenes/bitcoin-image.svg" alt="">
@@ -58,14 +62,14 @@
                       </table>
                   </div>
                   
-              </div>
-
               <div class="currency-table-date">
                 <p>
                     <b>Actualizado:</b> 26 Febrero 05:10
                 </p>
               </div>
               
+              </div>
+
               <!--Segunda tabla -->
               
               <div class="main-commissions-table">
@@ -89,15 +93,18 @@
                             <td class="table__bottom-right table__right">$ 14.96</td>
                         </tr>
                     </table>
+
+                    <div class="commissions-table-date">
+                        <p>
+                            <b>Actualizado:</b> 26 Febrero 05:10
+                        </p>
+                      </div>
+
                 </div>
                 
             </div>
 
-            <div class="commissions-table-date">
-              <p>
-                  <b>Actualizado:</b> 26 Febrero 05:10
-              </p>
-            </div>
+            
 
 
           </section>
@@ -172,26 +179,76 @@
               </p>
           </div>
           <section class="plans-container--slider">
-              <article class="plans-container--card">
 
-                  <p>Recomendado</p>
 
-                  <div>
-                      <h3>Pago Anual</h3>
-                      <p> <span>$</span> $99</p>
-                      <p>*Ahorras $129 comparado al plan mensual</p>
-                      <button>Escoger este <span></span> </button>
-                  </div>
+              <article class="plans-container--card-two">
 
-              </article>
+                <div class="plan-info-container-two">
+                    <h3 class="plan-card--title-two">Pago Anual</h3>
+                    <p class="plan-card--price-two"> <span>$</span>5</p>
+                    <p class="plan-card--saving-two">
+                        *Plan b&aacutesico para mantenerte informado
+                    </p>
+                    <button class="plan-card--ca-two">Escoger este <span></span> </button>
+                </div>
+
+            </article>
+
+
+            <article class="plans-container--card">
+
+                <p class="recommended">Recomendado</p>
+
+                <div class="plan-info-container">
+                    <h3 class="plan-card--title">Pago Anual</h3>
+                    <p class="plan-card--price"> <span>$</span>49</p>
+                    <p class="plan-card--saving">
+                        *Ahorras $129 comparado al plan mensual.
+                    </p>
+                    <button class="plan-card--ca">Escoger este <span></span> </button>
+                </div>
+
+            </article>
+
+
+            <article class="plans-container--card-three">
+
+                <div class="plan-info-container-three">
+                    <h3 class="plan-card--title-three">Acceso de por vida</h3>
+                    <p class="plan-card--price-three"> <span>$</span>99</p>
+                    <p class="plan-card--saving-three">
+                        *Ahorras $999+ comparado al plan anual.
+                    </p>
+                    <button class="plan-card--ca-three">Escoger este<span></span> </button>
+                </div>
+
+            </article>
           </section>    
             
         </section>
 
        </section>
+
     </main>
+
     <footer>
 
+       <section class="left">
+           <ul>
+               <li><a href="">Linkedin</a></li>
+
+               <li><a href="">Crunchbase</a></li>
+
+               <li><a href="">Hackernewa</a></li>
+           </ul>
+       </section>
+
+       <section class="right">
+           <img src="/Assets/Imagenes/c-batabit-2020.svg" alt="Logo de batatbit 2020">
+       </section>
+
     </footer>
+
 </body>
+
 </html>

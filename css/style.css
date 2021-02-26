@@ -94,6 +94,7 @@ header .content-header .button-content span {
     width: 25px;
     height: 24px;
     background-image: url('../Assets/Icons/flecha-abajo.svg');
+    /* vertical-align: text-bottom; */
 }
 
 main {
@@ -146,12 +147,21 @@ main .main-exchange-container .backgroundImg {
 
 /* ------------ */
 
+main .main-tables-container {
+    display: flex;
+    height: 400px;
+    width: 100%;
+    overflow-x: scroll;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity;
+}
+
 main .main-currency-table {
     width: 70%;
+    margin: 0 28px;
     min-width: 235px;
     max-width: 500px;
     height: 330px;
-    margin: 0 auto;
     font-family: var(--second-font);
 }
 
@@ -164,7 +174,8 @@ main .main-currency-table .currency-table--title {
 }
 
 main .currency-table--container {
-    width: 90%;
+    width: 90%; 
+    scroll-snap-align: center;
     min-width: 230px;
     max-width: 300px;
     height: 250px;
@@ -174,6 +185,8 @@ main .currency-table--container {
 main .currency-table--container table {
     width: 100%;
     height: 100%;
+    box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.16);
+    border-radius: 2px;
 }
 
 main .currency-table--container td {
@@ -234,9 +247,8 @@ main .main-tables-container .currency-table-date {
     width: 190px;
     height: 30px;
     background-color: var(--soft-orange);
-    margin-top: 15px;
     padding: 8px;
-    margin: 0 auto;
+    margin: 30px auto;
     border-radius: 8px;
 }
 
@@ -251,10 +263,10 @@ main .main-tables-container .currency-table-date p {
 
 main .main-commissions-table {
     width: 70%;
+    margin-right: 30px;
     min-width: 235px;
     max-width: 500px;
     height: 330px;
-    margin: 0 auto;
     font-family: var(--second-font);
 }
 
@@ -277,6 +289,8 @@ main .commissions-table--container {
 main .commissions-table--container table {
      width: 100%;
      height: 100%;
+     box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.16);
+     border-radius: 2px;
 }
 
 main .commissions-table--container td {
@@ -317,7 +331,7 @@ main .main-tables-container .commissions-table-date {
      background-color: var(--soft-blue);
      margin-top: 15px;
      padding: 8px;
-     margin: 0 auto;
+     margin: 30px auto;
      border-radius: 8px;
 }
 
@@ -456,11 +470,17 @@ main .main-plans-options .bitcoin-image-container h2 {
 /* ---------------------------*/
 
 main .main-plans-container {
-    width: 100%;
-    min-width: 320px;
-    padding-bottom: 70px;
     text-align: center;
 }
+
+main .main-plans-container .plans-container--slider {
+    display: flex;
+    height: 316px;
+    overflow-x: scroll;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity;
+}
+
 main .main-plans-container .plans--title {
     width: 90%;
     min-width: 288px;
@@ -485,4 +505,279 @@ main .main-plans-container .plans--title p {
     line-height: 1.8rem;
 }
 
-/* ----experimentos---- */
+/* --------------Primera card */ 
+
+main .main-plans-container .plans-container--card {
+    position: relative; 
+    scroll-snap-align: center;
+    width: 80%;
+    min-width: 190px;
+    max-width: 300px;
+    height: 250px;
+    margin: 50px 40px  0;
+    padding: 0 15px;
+    background-color: var(--just-white);
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.16);
+} 
+
+main .recommended {
+    position: absolute;
+    width: 101px;
+    height: 31px;
+    top: -15px;
+    left: calc(50% - 50px);
+    font-size: 1.2rem;
+    line-height: 1.452rem;
+    padding: 6px;
+    background-color: var(--bitcoin-orange);
+    border-radius: 8px;
+    color: var(--just-white);
+    font-weight: 700;
+    font-family: var(--second-font) 
+}
+
+main .plan-card--title {
+    padding-top: 30px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    color: black;
+}
+
+main .plan-card--price {
+    padding: 5px 0;
+    font-size: 5.2rem;
+    font-weight: bold;
+    line-height: 5.3rem;
+    color: black;
+    font-family: var(--second-font);
+    letter-spacing: -0.4rem;
+}
+
+main .plan-card--price span {
+    position: relative;
+    font-size: 1.2rem;
+    top: -27px;
+    left: -8px;
+    font-family: var(--second-font);
+}
+
+main .plan-card--saving {
+     font-size: 1.2rem;
+     font-weight: normal;
+     line-height: 1.4rem;
+     color: #757575;     
+}
+
+main .plan-card--ca {
+    width: 151px;
+    height: 48px;
+    margin-top: 16px;
+    background-color: var(--off-white);
+    border: 2px solid var(--bitcoin-orange);
+    border-radius: 4px;
+    line-height: 1.82rem;
+    font-weight: 700;
+    font-size: 1.4rem;
+    color: var(--warm-black);
+    font-family: var(--primary-font);
+}
+
+
+main .plan-card--ca span {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-image: url("/Assets/Icons/arrow-right.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-left: 10px;
+    vertical-align: text-bottom;
+}
+
+/* --------------Segunda card */ 
+
+main .main-plans-container .plans-container--card-two {
+    position: relative; 
+    scroll-snap-align: center;
+    width: 70%;
+    min-width: 190px;
+    max-width: 300px;
+    height: 250px;
+    margin: 50px auto  0;
+    padding: 0 15px;
+    background-color: var(--just-white);
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.16);
+} 
+
+
+main .plan-card--title-two {
+    padding-top: 30px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    color: black;
+}
+
+main .plan-card--price-two {
+    padding: 5px 0;
+    font-size: 5.2rem;
+    font-weight: bold;
+    line-height: 5.3rem;
+    color: black;
+    font-family: var(--second-font);
+    letter-spacing: -0.4rem;
+}
+
+main .plan-card--price-two span {
+    position: relative;
+    font-size: 1.2rem;
+    top: -27px;
+    left: -8px;
+    font-family: var(--second-font);
+}
+
+main .plan-card--saving-two {
+     font-size: 1.2rem;
+     font-weight: normal;
+     line-height: 1.4rem;
+     color: #757575;     
+}
+
+main .plan-card--ca-two {
+    width: 151px;
+    height: 48px;
+    margin-top: 16px;
+    background-color: var(--off-white);
+    border: 2px solid var(--bitcoin-orange);
+    border-radius: 4px;
+    line-height: 1.82rem;
+    font-weight: 700;
+    font-size: 1.4rem;
+    color: var(--warm-black);
+    font-family: var(--primary-font);
+}
+
+main .plan-card--ca-two span {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-image: url("/Assets/Icons/arrow-right.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-left: 10px;
+    vertical-align: text-bottom;
+}
+
+/* --------------Tercera card */ 
+
+main .main-plans-container .plans-container--card-three {
+    position: relative;    
+    scroll-snap-align: center; 
+    width: 70%;
+    min-width: 190px;
+    max-width: 300px;
+    height: 250px;
+    margin: 50px auto  0;
+    padding: 0 15px;
+    background-color: var(--just-white);
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.16);
+} 
+
+
+main .plan-card--title-three {
+    padding-top: 30px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    color: black;
+}
+
+main .plan-card--price-three {
+    padding: 5px 0;
+    font-size: 5.2rem;
+    font-weight: bold;
+    line-height: 5.3rem;
+    color: black;
+    font-family: var(--second-font);
+    letter-spacing: -0.4rem;
+}
+
+main .plan-card--price-three span {
+    position: relative;
+    font-size: 1.2rem;
+    top: -27px;
+    left: -8px;
+    font-family: var(--second-font);
+}
+
+main .plan-card--saving-three {
+     font-size: 1.2rem;
+     font-weight: normal;
+     line-height: 1.4rem;
+     color: #757575;     
+}
+
+main .plan-card--ca-three{
+    width: 151px;
+    height: 48px;
+    margin-top: 16px;
+    background-color: var(--off-white);
+    border: 2px solid var(--bitcoin-orange);
+    border-radius: 4px;
+    line-height: 1.82rem;
+    font-weight: 700;
+    font-size: 1.4rem;
+    color: var(--warm-black);
+    font-family: var(--primary-font);
+}
+
+main .plan-card--ca-three span {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-image: url("/Assets/Icons/arrow-right.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-left: 10px;
+    vertical-align: text-bottom;
+}
+
+/* -------------- */ 
+
+footer {
+    display: flex;
+    width: 100%;
+    height: 150px;
+    background-color: var(--bitcoin-orange);
+}
+
+footer section {
+    display: flex;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .left ul {
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    list-style: none;
+}
+
+footer .left li {
+    margin: 10px 0;
+}
+
+footer .left a {
+    text-decoration: none;
+    color: var(--just-white);
+
+}
